@@ -1,0 +1,90 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #333;
+}
+body img {
+}
+h1 {
+    font-size: 40px;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+.form,
+.greetings {
+    display: none;
+}
+.greetings {
+    font-size: 24px;
+}
+.form input {
+    border: 1px solid #333;
+    height: 30px;
+    margin-bottom: 5px;
+}
+.form input::placeholder {
+    text-indent: 5px;
+}
+.toDoForm input {
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid #333;
+}
+.toDoForm input::placeholder {
+    text-indent: 5px;
+}
+.showing {
+    display: block;
+}
+.toDoList {
+    /* border: 1px solid red; */
+    text-align: left;
+    font-weight: 600;
+    list-style: none;
+}
+.toDoList li {
+    margin-bottom: 10px;
+}
+.toDoList li:last-child {
+    margin-bottom: 0;
+}
+.toDoList button {
+    margin-right: 15px;
+    background: none;
+    cursor: pointer;
+    line-height: 30px;
+    width: 30px;
+    background: url("../images/btn_more.png") no-repeat center center;
+    text-indent: -99999px;
+}
+.weather {
+    font-weight: 600;
+    font-size: 18px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+.wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+}
